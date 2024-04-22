@@ -7,17 +7,17 @@ function tr = translatep(tab)
 % Example: 
 %     translatex(tab)
 % Observations:
-% LaTeX labels are formatted to provide abbreviated notation of
-% partitions with multiplicity indices.
-% Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
-% See License.txt
-% calcula os parsemas de cada canal (eventos)
-% 'onset' is a function of MIDI Toolbox Software Package,
-% by Tuomas Eerola & Petri Toiviainen, Department of Music,
-% ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-% Copyright © 2004, University of Jyvaskyla, Finland
+%     LaTeX labels are formatted to provide abbreviated notation of
+%     partitions with multiplicity indices.
+%     Created in 2004, january, under MATLAB 6.0 (PC)
+%     Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+%     Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+%     See License.txt
+%     calcula os parsemas de cada canal (eventos)
+%     'onset' is a function of MIDI Toolbox Software Package,
+%     by Tuomas Eerola & Petri Toiviainen, Department of Music,
+%     ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
+%     Copyright Â© 2004, University of Jyvaskyla, Finland
 % ========== Main function
 leg = {};
 for f = 1 : size(tab,1)
@@ -34,8 +34,8 @@ function c = converte(vec)
 % Output: 
 %	c = LaTeX code correspondent to numeric partition.
 % Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Â© Part of PARSEMAT - Parseme Toolbox, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 % ========== Conversion routine
 leg = [];
