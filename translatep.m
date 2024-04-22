@@ -7,17 +7,17 @@ function tr = translatep(tab)
 % Example: 
 %     translatex(tab)
 % Observations:
-%     LaTeX labels are formatted to provide abbreviated notation of
-%     partitions with multiplicity indices.
-%     Created in 2004, january, under MATLAB 6.0 (PC)
-%     © Part of PARSEMAT - Parseme Toolbox Software Package, 
-%     Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
-%     See License.txt
-%     calcula os parsemas de cada canal (eventos)
-%     'onset' is a function of MIDI Toolbox Software Package,
-%     by Tuomas Eerola & Petri Toiviainen, Department of Music,
-%     ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-%     Copyright © 2004, University of Jyvaskyla, Finland
+% LaTeX labels are formatted to provide abbreviated notation of
+% partitions with multiplicity indices.
+% Created in 2004, january, under MATLAB 6.0 (PC)
+% © Part of PARSEMAT - Parseme Toolbox Software Package, 
+% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% See License.txt
+% calcula os parsemas de cada canal (eventos)
+% 'onset' is a function of MIDI Toolbox Software Package,
+% by Tuomas Eerola & Petri Toiviainen, Department of Music,
+% ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
+% Copyright © 2004, University of Jyvaskyla, Finland
 % ========== Main function
 leg = {};
 for f = 1 : size(tab,1)
@@ -67,7 +67,7 @@ end
         else
             leg = [leg  compstr];
         end
-        if f < size(abs,2) && ind==1
+        if f < size(abs,2)
             leg = [leg '.'];
         end
         c = leg;
