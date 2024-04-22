@@ -1,29 +1,23 @@
 function combindexogram(tab)
-% 
-% The function combindexogram provides a indexogram where the main line is
-% the difference between the agglomeration and dispersion indices.
-%
+%     The function combindexogram provides a indexogram where the main line is
+%     the difference between the agglomeration and dispersion indices.
 % Input argument: 
 %	tab (partition table)
-%
 % Output: 
 %	combined indexograma correspondent to partition table
-% 
 % Example:
 %     combindexogram(tab)
-%
 % Observations: 
 %   The difference between the agglomeration and dispersion indices are
 %   plotted against the temporal axis, reflecting the equilibrium between
 %   the two aspects of partitional progressions. (Gentil-Nunes 2009)
-% 
 % Created in 2004, january, under MATLAB 6.0 (PC)
 % 'Onset' is a function of MIDI Toolbox Software Package,
 % by Tuomas Eerola & Petri Toiviainen, Department of Music,
 % ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-% Copyright © 2004, University of Jyvaskyla, Finland
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Copyright Â© 2004, University of Jyvaskyla, Finland
+% Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 %========== Initialization
 p = structpars(tab);
