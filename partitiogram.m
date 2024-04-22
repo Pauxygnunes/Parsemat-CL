@@ -1,25 +1,30 @@
 function partitiogram(tab)
-%     The function partitiogram renders the graphic where the partitions of the
-%     file are displaced in a phase space where the coordinates are the
-%     agglomeration and dispersion indices.
+% 
+% The function partitiogram renders the graphic where the partitions of the
+% file are displaced in a phase space where the coordinates are the
+% agglomeration and dispersion indices.
+%
 % Input argument: 
 %	tab (partition table)
+%
 % Output: 
 %   partitiogram
+% 
 % Example:
 %   partitiogram(tab)
+% 
 % Observations: 
 %   The partitiogram is one of the main tools of Musical Partitional
 %   Analysis. It represents the inventory of partitions of the MIDI file,
 %   topologically displaced to show parsimonious relations and distances.
 %   The background is filled with the lexset of the maximal density-number
 %   of the instrumentation.
-% Info
-%     Created in 2004, 2022, under MATLAB 6.0 (PC) and Mac Os 
-%     The function partitiogram is part of PARSEMAT - Parseme Toolbox, 
-%     Copyright© 2003, 2005, 2007, 2009, 2022 by Pauxy Gentil Nunes Filho
-%     See License.txt
-% ========== Initialization
+% 
+% Created in 2004, 2022, under MATLAB 6.0 (PC) and Mac Os 
+% The function partitiogram is part of PARSEMAT - Parseme Toolbox, 
+% Copyright© 2003, 2005, 2007, 2009, 2022 by Pauxy Gentil Nunes Filho
+% See License.txt
+%========== Initialization
 a = agglom(tab);
 d = dispers(tab);
 maxtot = max([a d]);
@@ -117,10 +122,9 @@ indd = indd(1);
 part = st(inds, 2:end);
 part(part==0) = [];
 part = sort(part);
+part = cell2mat(translatep(part));
 ag = num2str(inda);
 dp = num2str(indd);
-pt = num2str(part);
-%part = num2str(ind2part(pos(1), pos(2)))
-showinfo = {['p = ', pt];...
+showinfo = {['p = ', part];...
             ['ad = (', ag, ', ', dp, ')']};
 end
