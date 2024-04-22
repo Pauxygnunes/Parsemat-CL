@@ -1,26 +1,21 @@
 function p = partitions (n)
-%
-% The function partitions provides a list of all partitions of a integer
-% number n in lexicographic order.
-% 
+%     The function partitions provides a list of all partitions of a integer
+%     number n in lexicographic order.
 % Input argument: 
 %	n (positive integer)
-%
 % Output: 
 %	p (list of partitions of n)
-%
 % Example: 
 %     partitions(4)
-%
 % Observations:
 %   Programmed by Gentil-Nunes (2007) from algorithm conceived by Butler,
 %   Bill (2007) - Enumerations of partitions. Available in
 %   <http://www.durangobill.com/Partitions.html>.
-%
-% Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
-% See License.txt
+% Info
+%     Created in 2004, january, under MATLAB 6.0 (PC)
+%     Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+%     Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+%     See License.txt
 % ========== Initialization
 tab = [];
 lintemp = [];
@@ -59,8 +54,8 @@ function d = durango(n)
 %   <http://www.durangobill.com/Partitions.html>.
 % 
 % Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Â© Part of PARSEMAT - Parseme Toolbox, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 % ========== Initialization
 tab = [];
