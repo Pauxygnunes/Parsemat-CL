@@ -1,31 +1,26 @@
 function stairsindexogram(tab)
-% 
-% The function stairsindexogram renders the indexogram in stairs style,
-% where the lines follows the full duration of each partition.
-% 
+%         The function stairsindexogram renders the indexogram in stairs style,
+%         where the lines follows the full duration of each partition.
 % Input argument: 
 %	tab (partition table)
-%
 % Output:
 %   indexogram in stairs style
-% 
-% Exemplo:
+% Example:
 %     stairsindexogram(tab)
-%
 % Observation: 
 %   The stairs indexogram emphasizes the sudden change of one partition to
 %   another. It is provided for more precise representation where the
 %   angles from one partition to another are not important.
-%
-% Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
-% See License.txt
-% 'Onset' is a function of MIDI Toolbox Software Package,
-% by Tuomas Eerola & Petri Toiviainen, Department of Music,
-% ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-% Copyright © 2004, University of Jyvaskyla, Finland
-%========== Initialization
+% Info
+%   Created in 2004, january, under MATLAB 6.0 (PC)
+%   Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+%   Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+%   See License.txt
+%   'Onset' is a function of MIDI Toolbox Software Package,
+%   by Tuomas Eerola & Petri Toiviainen, Department of Music,
+%   ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
+%   Copyright Â© 2004, University of Jyvaskyla, Finland
+% ========== Initialization
 p = structpars(tab);
 a = agglom(tab);
 d = dispers(tab);
