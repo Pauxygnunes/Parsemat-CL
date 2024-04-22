@@ -1,32 +1,26 @@
 function p = pevents(nm)
-% The function pevents converts the note matrix in a partition table
-% through event partitioning.
-% 
+%     The function pevents converts the note matrix in a partition table
+%     through event partitioning.
 % Usage
 %   tab = pevents (nm)
-% 
 % Input argument: 
 %	nm = note matrix 
-%
 % Output: 
 %	tab = partition table.
-%
 % Example: 
 %     pevents(nm)
-%
 % Observation:
-%
-% Please ensure the nm variable is set in the system, either through the
-% midi2nm script or another script that incorporates it.
-%
-% Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
-% See License.txt
-% 'onset' is a function of MIDI Toolbox Software Package,
-% by Tuomas Eerola & Petri Toiviainen, Department of Music,
-% ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-% Copyright © 2004, University of Jyvaskyla, Finland
+%     Please ensure the nm variable is set in the system, either through the
+%     midi2nm script or another script that incorporates it.
+% Info
+%     Created in 2004, january, under MATLAB 6.0 (PC)
+%     Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+%     Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+%     See License.txt
+%     'onset' is a function of MIDI Toolbox Software Package,
+%     by Tuomas Eerola & Petri Toiviainen, Department of Music,
+%     ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
+%     Copyright Â© 2004, University of Jyvaskyla, Finland
 % ========== Initialization
 at = atpoints(nm);
 ptemp = [];
@@ -89,15 +83,15 @@ function c = canais(ca)
 % Ordenation function - no new data.
 % 
 % Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Â© Part of PARSEMAT - Parseme Toolbox, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 % 'Channel' is a function of MIDI Toolbox Software Package,
 % by Tuomas Eerola & Petri Toiviainen, Department of Music,
 % ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi 
-% Copyright © 2004, University of Jyvaskyla, Finland
-% © Part of PARSEMAT - Parseme Toolbox, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Copyright Â© 2004, University of Jyvaskyla, Finland
+% Â© Part of PARSEMAT - Parseme Toolbox, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 % ========== Initialization
 c = [];
