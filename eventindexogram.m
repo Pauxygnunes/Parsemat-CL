@@ -1,22 +1,17 @@
 % Script eventindexogram
-% 
-% The script eventindexogram provides the indexogram correspondent to
-% the event partitioning of a MIDI file.
-% 
+%   The script eventindexogram provides the indexogram correspondent to
+%   the event partitioning of a MIDI file.
 % Usage:
 %   eventindexogram
-% 
 % Example:
 %   eventindexogram
-% 
 % Observations: 
 %   The MIDI file has to be prepared with each event in score assigned to a
 %   specific channel. The event partitioning is part of Musical Partitional
 %   Analysis (Gentil-Nunes 2009).
-%
 % Created in february 2009, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox Software Package, 
-% Copyright © 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
+% Â© Part of PARSEMAT - Parseme Toolbox Software Package, 
+% Copyright Â© 2003, 2005, 2007, 2009, Pauxy Gentil Nunes Filho
 % See License.txt
 % ========== Operates the event partitioning
 midi2nm
