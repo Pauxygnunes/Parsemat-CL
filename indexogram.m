@@ -12,7 +12,7 @@ function indexogram(tab)
 %   temporal axis. Agglomeration index is plotted in the inferior part of
 %   the graphic, for better comparison with the movements of the dispersion
 %   line (Gentil-Nunes 2009).
-% Info
+% Info:
 %     Created in 2004, january, under MATLAB 6.0 (PC)
 %     © Part of PARSEMAT - Parseme Toolbox,
 %     Copyright © 2003, 2005, 2007, 2009, 2022, Pauxy Gentil Nunes Filho
@@ -99,7 +99,7 @@ pt = tab(tp,2:end);
 colsWithZeros = pt==0;
 pt(colsWithZeros)=[];
 part = sort(pt);
-part = num2str(part);
+part = cell2mat(translatep(part));
 beat = num2str(pos(1));
 %part = num2str(ind2part(pos(1), pos(2)))
 showinfo = {['p = ', part];...
