@@ -1,31 +1,27 @@
 function indexogram(tab)
-% The function indexogram renders the graphic based on the indices of
-% agglomeration and dispersion, plotted against a median temporal axis.
-% 
+%     The function indexogram renders the graphic based on the indices of
+%     agglomeration and dispersion, plotted against a median temporal axis.
 % Input argument:
 %	tab (partition table)
-% 
 % Output:
 %	indexogram
-% 
 % Example:
 %     indexogram(tab)
-% 
 % Observations:
 %   The agglomeration and dispersion indices are plotted around the median
 %   temporal axis. Agglomeration index is plotted in the inferior part of
 %   the graphic, for better comparison with the movements of the dispersion
 %   line (Gentil-Nunes 2009).
-% 
-% Created in 2004, january, under MATLAB 6.0 (PC)
-% © Part of PARSEMAT - Parseme Toolbox,
-% Copyright © 2003, 2005, 2007, 2009, 2022, Pauxy Gentil Nunes Filho
-% See License.txt
-% 'Onset' is a function of MIDI Toolbox Software Package,
-% by Tuomas Eerola & Petri Toiviainen, Department of Music,
-% ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi
-% Copyright © 2004, University of Jyvaskyla, Finland
-%========== Initialization
+% Info
+%     Created in 2004, january, under MATLAB 6.0 (PC)
+%     Â© Part of PARSEMAT - Parseme Toolbox,
+%     Copyright Â© 2003, 2005, 2007, 2009, 2022, Pauxy Gentil Nunes Filho
+%     See License.txt
+%     'Onset' is a function of MIDI Toolbox Software Package,
+%     by Tuomas Eerola & Petri Toiviainen, Department of Music,
+%     ptee@cc.jyu.fi, ptoiviai@cc.jyu.fi
+%     Copyright Â© 2004, University of Jyvaskyla, Finland
+% ========== Initialization
 a = agglom(tab);
 d = dispers(tab);    
 % graphic limits
