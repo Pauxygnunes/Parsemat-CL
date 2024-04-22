@@ -1,29 +1,25 @@
 function partitiogram(tab)
-% 
-% The function partitiogram renders the graphic where the partitions of the
-% file are displaced in a phase space where the coordinates are the
-% agglomeration and dispersion indices.
-%
+% Description
+%   The function partitiogram renders the graphic where the partitions of
+%   the file are displaced in a phase space where the coordinates are the
+%   agglomeration and dispersion indices.
 % Input argument: 
 %	tab (partition table)
-%
 % Output: 
 %   partitiogram
-% 
 % Example:
 %   partitiogram(tab)
-% 
-% Observations: 
+% Notes: 
 %   The partitiogram is one of the main tools of Musical Partitional
 %   Analysis. It represents the inventory of partitions of the MIDI file,
 %   topologically displaced to show parsimonious relations and distances.
 %   The background is filled with the lexset of the maximal density-number
 %   of the instrumentation.
-% 
-% Created in 2004, 2022, under MATLAB 6.0 (PC) and Mac Os 
-% The function partitiogram is part of PARSEMAT - Parseme Toolbox, 
-% Copyright© 2003, 2005, 2007, 2009, 2022 by Pauxy Gentil Nunes Filho
-% See License.txt
+% Info:
+%   Created in 2004, 2022, under MATLAB 6.0 (PC) and Mac Os 
+%   The function partitiogram is part of PARSEMAT - Parseme Toolbox, 
+%   Copyright© 2003, 2005, 2007, 2009, 2022 by Pauxy Gentil Nunes Filho
+%   See License.txt
 %========== Initialization
 a = agglom(tab);
 d = dispers(tab);
@@ -54,8 +50,6 @@ xlabel('agglomeration')
 ylabel('dispersion')
 axis square
 box on
-% ========== lexical-set
-% plotlexset(dnmax); disabled since 2002 (Parsemat 0.91)
 % ========== lines
 plot (a,d,...
         '-bo',...
@@ -64,14 +58,6 @@ plot (a,d,...
         'MarkerEdgeColor','auto',...
         'MarkerFaceColor','m',...
         'Markersize',8);
-% ========== tab partitions - disabled since 2002 (Parsemat 0.91)
-% text (as, ds, ls, ...    
-%       'Fontsize', 8,...
-%       'Backgroundcolor', 'w',...
-%       'Edgecolor', 'm',...
-%       'Fontweight', 'bold',...
-%       'HorizontalAlignment', 'center',...
-%        'Margin', 5);
 hold off
 % ========== menus
 menus = findobj(fh, 'Type', 'uimenu');
@@ -81,14 +67,14 @@ datacursormode on
 dcm.DisplayStyle = 'window';
 set(dcm, 'updatefcn', {@showinfo, as, ds, st})
 end
-% =========== extract tab partitions
+% =========== function sumulapart
 function sp = sumulapart(tab)
 lp = listapart(tab);
 lt = length(onset(lp));
 jc = 1:lt;
 sp = [jc' lp];
 end
-% ========== Partition list
+% ========== function listapart
 function listapart = listapart(nm)
 % Partitions found in note matrix - 
 % for paradigmatic analysis
